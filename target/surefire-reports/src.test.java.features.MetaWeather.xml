@@ -1,0 +1,11 @@
+<testsuite failures="0" name="src/test/java/features/MetaWeather.feature" skipped="0" tests="1" time="1.235197">
+  <testcase classname="src.test.java.features.MetaWeather" name="Search for London" time="1.235197">
+    <system-out>* url 'https://www.metaweather.com/api' ................................... passed
+Given path '/location/search' ............................................. passed
+And param query = 'London' ................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response[0] contains {title: 'London'} .......................... passed
+And match each response contains {title: 'London'} ........................ passed</system-out>
+  </testcase>
+</testsuite>
